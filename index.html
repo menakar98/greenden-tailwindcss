@@ -10,24 +10,38 @@
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl p-5 sticky top-0 z-10">
-        <h1 class="text-3xl font-bold text-green-700">
-            Greenden
-        </h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 md:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-        </svg>
+   <!-- navbar -->
+<nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl p-5 sticky top-0 z-10">
+    <h1 class="text-3xl font-bold text-green-700">
+        Greenden
+    </h1>
 
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6 md:hidden cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+    </svg>
 
+    <ul class="flex text-gray-600 gap-5 hidden md:flex">
+        <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="Products.html">Products</a>
+        <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+    </ul>
+</nav>
 
-        <ul class="flex text-gray-600 gap-5 hidden md:flex">
-            <a class="hover:underline hover:text-black" href="index.html"> Home</a>
-            <a class="hover:underline hover:text-black" href="Products.html"> Products</a>
-            <a class="hover:underline hover:text-black" href="contact.html"> Contact</a>
-        </ul>
-    </nav>
+<!-- mobile sidebar -->
+<section id="sidenav"
+    class="bg-green-100 fixed w-11 h-14 top-0 left-0 z-2000 p-5 md:hidden"
+    >
+
+    <p id="closeicon" class="text-right text-3xl cursor-pointer mb-8">X</p>
+
+    <ul class="grid text-gray-600 gap-8 text-xl">
+        <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="Products.html">Products</a>
+        <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+    </ul>
+</section>
+    
 
     <!--hero section-->
     <div class="bg-green-100 p-4 flex justify-evenly">
@@ -156,6 +170,10 @@
         <p>@2026 Greenday.com</p>
 
     </div>
+
+    <script src="index.js">
+      
+    </script>
 </body>
 
 </html>
